@@ -55,7 +55,12 @@ public class LekarzAdapter extends RecyclerView.Adapter<LekarzAdapter.ViewHolder
 
         @OnClick(R.id.buttonWybierz)
         void onNameClick(){
-            buttonWybierz.setText("Wybrano");
+            if(buttonWybierz.getText()=="Wybierz"){
+                buttonWybierz.setText("Wybrano");
+            }
+            else{
+                buttonWybierz.setText("Wybierz");
+            }
         }
 
         public ViewHolder(View itemView) {
