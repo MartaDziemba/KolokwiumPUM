@@ -4,6 +4,7 @@ import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 import android.widget.TextView;
 
 import java.util.ArrayList;
@@ -49,8 +50,12 @@ public class LekarzAdapter extends RecyclerView.Adapter<LekarzAdapter.ViewHolder
         @BindView(R.id.specjalnosc)
         TextView specjalnosc;
 
+        @BindView(R.id.buttonWybierz)
+        Button buttonWybierz;
+
         @OnClick(R.id.buttonWybierz)
         void onNameClick(){
+            buttonWybierz.setText("Wybrano");
         }
 
         public ViewHolder(View itemView) {
